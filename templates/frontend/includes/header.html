@@ -1,0 +1,178 @@
+{% block header %}
+		<!--loader-->
+		<div id="preloader">
+			<div class="sk-circle">
+				<div class="sk-circle1 sk-child"></div>
+				<div class="sk-circle2 sk-child"></div>
+				<div class="sk-circle3 sk-child"></div>
+				<div class="sk-circle4 sk-child"></div>
+				<div class="sk-circle5 sk-child"></div>
+				<div class="sk-circle6 sk-child"></div>
+				<div class="sk-circle7 sk-child"></div>
+				<div class="sk-circle8 sk-child"></div>
+				<div class="sk-circle9 sk-child"></div>
+				<div class="sk-circle10 sk-child"></div>
+				<div class="sk-circle11 sk-child"></div>
+				<div class="sk-circle12 sk-child"></div>
+			</div>
+		</div>
+
+		<!--loader-->
+
+		<!-- HEADER -->
+		<header id="header" class="header">
+			<div class="top_head">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="top_tuch">
+								<ul class="location_box">
+									<li>
+										<span><i class="fa fa-envelope"></i> Email</span>
+										<a href="mailto:business@support.com">business@support.com</a>
+									</li>
+									<li>
+										<span><i class="fa fa-map-marker"></i> Location</span>
+										<b>123 Main Street, St. NW Ste</b>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="social_up">
+								<ul class="social_tuch">
+									<li>
+										<span>Connect With Us</span>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-youtube"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main_menu_header">
+				<div class="container">
+					<div class="row d-flex align-items-center">
+						<div class="col-lg-3">
+							<div class="logo">
+								<a href="http://theembazaar.com/demo/goldey/memozin/index.html"> <img src="http://theembazaar.com/demo/goldey/memozin/assets/images/logo.pnge" class="show_topheader" alt="" title=""> </a>
+							</div>
+							<button id="menu" class="menu d-block d-md-none"></button>
+						</div>
+						<div class="col-lg-9 d-flex justify-content-between">
+							<div class="navigation">
+								<ul>
+									<li>
+										<a href="{% url 'frontend:index' %}">Home</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										
+									</li>
+									<li>
+										<a href="#!">Achievements</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										
+									</li>
+									<li>
+										<a href="#!">Admission</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										
+									</li>
+									<li>
+										<a href="{% url 'frontend:gallery' %}">Gallery</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										
+									</li>
+									<li>
+										<a href="#!">About us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<ul class="sub-nav">
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/about.html">About</a>
+											</li>
+										
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/history.html">history</a>
+											</li>
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/career.html">career</a>
+											</li>
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/partnerships.html">partnerships</a>
+											</li>
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/leadership.html">leadership</a>
+											</li>
+										</ul>
+									</li>
+																		<li>
+										<a href="#!">Event</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<!-- Nav Dropdown -->
+										<ul class="sub-nav">
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/event.html">Event</a>
+											</li>
+
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/event-details.html">Event details</a>
+											</li>
+
+										</ul>
+										<!-- End Nav Dropdown -->
+									</li>
+
+									<li>
+										<a href="javascript:avoid(0);">blog</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<ul class="sub-nav">
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/blog.html">Blog</a>
+											</li>
+											<li>
+												<a href="http://theembazaar.com/demo/goldey/memozin/blog-detail.html">Blog Details</a>
+											</li>
+										</ul>
+									</li>
+
+									
+									<li>
+										<a href="{% url 'frontend:contact' %}">Contact us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+									
+									</li>
+								</ul>
+
+							</div>
+
+							<div class="button_search d-flex align-items-center">
+
+								<div class="search d-none d-md-block">
+									<a id="toggle_res_search" data-toggle="collapse" data-target="#search_form" class="res-only-view collapsed" href="javascript:void(0);"
+									aria-expanded="false"> <i class="fa fa-search"></i> </a>
+									<form id="search_form" role="search" class="search-form collapse" action="#">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search...">
+											<button type="button" class="btn" data-target="#search_form" data-toggle="collapse" aria-label="Close">
+												<i class="ion-android-search"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!-- END HEADER -->
+
+{% endblock %}

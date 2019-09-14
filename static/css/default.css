@@ -1,0 +1,92 @@
+/* HOME_PAGE */
+/*
+============== background Color====================
+*/
+.navigation ul > li > ul > li > a:hover, .process_box, .tparrows.tp-leftarrow:hover, .tparrows.tp-rightarrow:hover,
+.line_heading .line_bar, .show_profile a, .team_box:hover .team_detail:after, .newsletter-form .input-group-btn .btn,
+.footer_social ul li a {
+  background: #ffb606;
+}
+
+/*
+============== Text Color====================
+*/
+.top_tuch ul.location_box li span i, .social_up .social_tuch li a, .navigation ul > li > a:hover, .about_text span,
+.about_point .icon_conunt, .events-area .event-info a:hover, .item .padding_right span,
+.social-links ul li a:hover i, .social_up .social_tuch li a:hover {
+  color: #ffb606;
+}
+
+/*
+============== Border Color====================
+*/
+.navigation .sub-nav, #search_form, .process_box, .tparrows.tp-leftarrow:hover, .tparrows.tp-rightarrow:hover {
+  border-color: #ffb606;
+}
+
+/* INNER_PAGE */
+/*
+============== background Color====================
+*/
+.b-line, .btn-text, .dark-bg, .hover-bg:hover, .ui-timeline .tl-item .tl-body .tl-entry .btn-primary, .abt-block__slider .owl-dots .owl-dot,
+.bullet_round:after, .second_righ:after, .owl-prev, .owl-next, .arrow_theme .owl-prev, .arrow_theme .owl-next,
+.faq .collape-plus, .panel-title a i, .container-filter li a.active, .container-filter li a:hover,
+.link-zoom a.same_style, .project-info, .blog-date, .pagination-nav ul li.active a, .pagination-nav ul li:hover a,
+#related-project .owl-prev:hover, #related-project .owl-next:hover, .sidebar-widget .widget-tag li a:hover,
+.box-hover:hover .team-block, .page-signin .body-inner:before, .ui-input-group .input-bar:before, .ui-input-group .input-bar:after,
+a.btn.xplus-btn.pricing.active, .btn.xplus-btn, a.btn.xplus-btn.pricing:hover, .skinonebg, .pricing-btn .get-start, .bg-color3, .bg-color,
+.ribbon.blue, .btn-default, .bar, .btn-default:hover, .color-switch .owl-controls .owl-page span, .tags li a, .shop .product-overlay div:hover,
+.nf-carousel-theme .owl-controls .owl-nav .owl-prev, .nf-carousel-theme .owl-controls .owl-nav .owl-next,
+.course__details_block .student-feedback .rating-column .rate-percentage .colored-layer, .plan-content-box h3::after {
+  background: #ffb606;
+}
+
+.social_hover {
+  background: #ffb606;
+  /* The Fallback */
+  background: rgba(255, 182, 6, 0.8);
+}
+
+.bullet_round:before, .second_righ:before {
+  box-shadow: 0 0 6px 6px #ffb606;
+}
+
+.skinoneplancolor, div .secondary_bg {
+  background: #d29400;
+}
+
+/*
+============== Text Color====================
+*/
+a:focus, a:hover, .abt-box__content-link-arrow, .abt-box_link-arrow, .abt-box__content-link:hover, .abt-box_link:hover,
+.abt-block_link-arrow, .abt-block_link:hover, .mv-block__vision_link:hover, .mv-block__mission_link:hover,
+.mv-block__vision_link-arrow, .mv-block__mission_link-arrow, .solution_box i.color_orenge, .single-fact .icon-boxed, .star i,
+.abt__link-arrow, .abt__link:hover, .gallery-heading h4 a:hover, .post-meta span > a > i, .pagination-nav ul li a,
+.sidebar-widget ul li a:hover, .lead-point li, .blog-post .fa-tag, .post-meta span > a > i, .custom-check:before,
+.ui-input-group > input:focus ~ label, .ui-input-group > textarea:focus ~ label, .color-primary, a.color-primary,
+.pricing-2 .price, .pricing-2 .currency-symbol, .price-blue--color, .big-font i, .contact-info .info li .icon,
+.contact .icon-circle, .course_features_point li i, .course__details_block .student-feedback .rating-title .inner .rating .fa,
+.course__details_block .student-comment .comment-inner .student-info .info-inner .rating .fa, .event__date, .event__month, .more_btn__block {
+  color: #ffb606;
+}
+
+/*
+============== Border Color====================
+*/
+.btn-text, .v-line, .ui-timeline .tl-item .tl-body .tl-entry .btn-primary, .testimonial-block .small-divider,
+#related-project .owl-prev:hover, #related-project .owl-next:hover, .pagination-nav ul li a, .widget-tag li a,
+.widget-search input[type=text]:focus, .blog-post-hr input[type=text]:focus, .blog-post-hr textarea:focus,
+.custom-check, .pricing-2 .pricing_table.active, a.btn.xplus-btn.pricing.active,
+.btn.xplus-btn, a.btn.xplus-btn.pricing:hover, .pricing-wrap, .client-avtar,
+.contact-form input[type=text]:focus, .contact-form textarea:focus, .contact .icon-circle,
+.arrow_theme .owl-prev:hover, .arrow_theme .owl-next:hover {
+  border-color: #ffb606;
+}
+
+.team-member .inner-box .overlay-box:after, .ui-input-group > input:focus, .rightGrip:before, .leftGrip:before {
+  border-bottom-color: #ffb606;
+}
+
+.ribbon:before, .ribbon:after {
+  border-top-color: #ffb606;
+}
