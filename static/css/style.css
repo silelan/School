@@ -1,43 +1,4 @@
-/*Table Content
- =================================================
- * BASIC STYLE
- - Typography Style
- - Padding and Margin Style
- - General Style
- - Box Hover Style
- - Form Style
 
- * HEADER
- - Header Style
- - Header style 2
- - Navigation Menu
-
- * FOOTER
-
- * ELEMENTS
- - Main Banner
- - Page Intro
- - Testimonial
- - Pagination Navigation
- - Sidebar Widget
- - blog Section
- - Partner Section
- - About Us Page
- - Timeline Section
- - Team
- - Serve
- - Faq Page
- - 404 page
- - Blog Page
- - Register and login Pages
- - Contact Page
- - Preloader
- ================================================
- */
-
-/*-------------------------------------------------------------------------------------------*/
-/* BASIC STYLE    ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 body, html {
 	margin: 0;
 	padding: 0;
@@ -49,7 +10,7 @@ body {
 	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
 }
-/*  Typography Style   ||-----------*/
+
 h1 {
 	font-size: 60px;
 	margin-top: 0;
@@ -528,7 +489,6 @@ a {
 
 }
 
-/*  General Style   ||-----------*/
 button:focus {
 	outline: none
 }
@@ -786,7 +746,6 @@ img {
 .m-height {
 	min-height: 183px;
 }
-/*  Box Hover Style   ||-----------*/
 .heading-box p {
 	margin-bottom: 0px;
 }
@@ -823,8 +782,6 @@ img {
 	width: 100%;
 	height: 100%;
 }
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -846,9 +803,6 @@ img {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
-/*---------------*/
-/***** Sadie *****/
-/*---------------*/
 
 figure.effect-sadie figcaption::before {
 	position: absolute;
@@ -898,10 +852,6 @@ figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-/*-----------------*/
-/***** Goliath *****/
-/*-----------------*/
-
 figure.effect-goliath {
 	background: #222;
 }
@@ -944,9 +894,6 @@ figure.effect-goliath:hover p {
 .grid figure.effect-goliath {
 	margin: 0;
 }
-/*---------------*/
-/***** Zoe *****/
-/*---------------*/
 .grid figure.effect-zoe {
 	background: none;
 }
@@ -1032,9 +979,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
-/* -------------------------------------*/
-/* Carousel-Theme (Slider Elements - Bullets, Pagination, etc..) ---------*/
-/* -------------------------------------*/
 .owl-nav {
 	position: static;
 }
@@ -1129,7 +1073,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .owl-next {
 	right: 0;
 }
-/*Form Style   ||-----------*/
 
 button {
 	outline: none;
@@ -1283,9 +1226,6 @@ figure {
 .member_say {
 	font-size: 14px;
 }
-/* ----------------------------------------------------------------------*/
-/* Pagination Navigation   --------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 .pagination-nav {
 	width: 100%;
 	display: block;
@@ -1314,9 +1254,6 @@ figure {
 	background: #5c5de9;
 	color: #fff;
 }
-/* ----------------------------------------------------------------------*/
-/* Sidebar Widget   ---------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 
 .sidebar-widget {
 	margin-bottom: 50px;
@@ -1497,14 +1434,6 @@ figure {
 .sidebar-widget .SaddleBrown-box {
 	background: #8B4513;
 }
-
-/***
-
- ====================================================================
- single-blog-post
- ====================================================================
-
- ***/
 
 .single-blog-post .content-box {
 	border: 1px solid #eee;

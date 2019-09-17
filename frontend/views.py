@@ -11,6 +11,12 @@ from django.shortcuts import render, redirect
 class IndexView(View):
     template_name = 'frontend/index.html'
     def get(self, request):
+
+        return render(request, self.template_name)
+class AdmissionView(View):
+    template_name = 'frontend/admission.html'
+    def get(self, request):
+
         return render(request, self.template_name)
 
 class GalleryView(View):
@@ -18,21 +24,22 @@ class GalleryView(View):
     def get(self, request):
         gallery = GalleryModel.objects.all()
         page = request.GET.get('page', 1)
-        paginator = Paginator(gallery, 2)
+        paginator = Paginator(gallery, 6)
         try:
-            users = paginator.page(page)
+            data = paginator.page(page)
         except PageNotAnInteger:
-            users = paginator.page(1)
+            data = paginator.page(1)
         except EmptyPage:
-            users = paginator.page(paginator.num_pages)
+            data = paginator.page(paginator.num_pages)
         
-        return render(request, self.template_name,{'data':gallery})
+        return render(request, self.template_name,{'data':data})
 
 
 class AchivementsView(View):
     template_name = 'frontend/achivements.html'
     def get(self, request):
-        return render(request, self.template_name)
+        achievment = AchievmentModel.objects.all()
+        return render(request, self.template_name,{'data':achievment})
 
 class AboutView(View):
     template_name = 'frontend/about.html'

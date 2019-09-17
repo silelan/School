@@ -8,3 +8,11 @@ class GalleryModel(models.Model):
 
     def __str__(self):
         return self.image_name
+
+class AchievmentModel(models.Model):
+    image_heading = models.CharField(max_length = 100)
+    image_description = models.CharField(max_length = 254)
+    image = models.ImageField(upload_to = 'achievment',null=False)
+
+    def __str__(self):
+        return self.image_heading

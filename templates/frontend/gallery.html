@@ -2,38 +2,48 @@
 
 {% block content %}
 <div class="container">
+    <h1 style="text-align: center;">Gallery</h1><hr>
   <div class="row">
+    
     {% for data in data %}
       <div class="col-sm-4">  
         <ul class="nospace clear">          
-          <li class="one_quarter first"><a href="#"><img src="{{ data.image.url }}"class="img-responsive" alt=""></a></li><br>
-            <header class="heading"><h1>{{ data.image_name }}</h1></header>
+          <li class="one_quarter first"><a href="#"><img src="{{ data.image.url }}"class="img-responsive" alt=""style="height: 300px; width:300px;"></a></li><br>
+            <header class="heading"><h2>{{ data.image_name }}</h2></header>
               <figcaption><h4>{{ data.image_description }}</h4></figcaption>
         </ul>
       </div>
     {% endfor %}
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
   </div>
  </div>
+ {% endblock %}
 <!--Pagination Code-->
- {% if is_paginated %}
+
+{% if data.has_other_pages %}
   <ul class="pagination">
-    {% if page_obj.has_previous %}
-      <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+    {% if data.has_previous %}
+      <li><a href="?page={{ data.previous_page_number }}">&laquo;</a></li>
     {% else %}
       <li class="disabled"><span>&laquo;</span></li>
     {% endif %}
-    {% for i in paginator.page_range %}
-      {% if page_obj.number == i %}
+    {% for i in data.paginator.page_range %}
+      {% if data.number == i %}
         <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
       {% else %}
         <li><a href="?page={{ i }}">{{ i }}</a></li>
       {% endif %}
     {% endfor %}
-    {% if page_obj.has_next %}
-      <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+    {% if data.has_next %}
+      <li><a href="?page={{ data.next_page_number }}">&raquo;</a></li>
     {% else %}
       <li class="disabled"><span>&raquo;</span></li>
     {% endif %}
   </ul>
 {% endif %}
-{% endblock %}

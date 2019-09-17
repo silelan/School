@@ -1,3 +1,4 @@
+{% load static %}
 {% block header %}
 		<!--loader-->
 		<div id="preloader">
@@ -68,7 +69,7 @@
 					<div class="row d-flex align-items-center">
 						<div class="col-lg-3">
 							<div class="logo">
-								<a href="http://theembazaar.com/demo/goldey/memozin/index.html"> <img src="http://theembazaar.com/demo/goldey/memozin/assets/images/logo.pnge" class="show_topheader" alt="" title=""> </a>
+								<a href="{% url 'frontend:index' %}"> <img src="{% static 'images/logo.png' %}" class="show_topheader" alt="" title="" style="height: 100px;width:100px; border-radius: 50px;"></a>
 							</div>
 							<button id="menu" class="menu d-block d-md-none"></button>
 						</div>
@@ -80,11 +81,11 @@
 										
 									</li>
 									<li>
-										<a href="#!">Achievements</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<a href="{% url 'frontend:achivements' %}">Achievements</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 										
 									</li>
 									<li>
-										<a href="#!">Admission</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<a href="{% url 'frontend:admission' %}">Admission</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 										
 									</li>
 									<li>
