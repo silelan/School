@@ -7,12 +7,13 @@
 
 ## Create Super User
 
-To create super user run command python manage.py createsuperuser.
+    To create super user run command python manage.py createsuperuser.
 
 ## Link Database
 
-To link database with your model run command python manage.py makemigrations After that run command python manage.py migrate
+    To link database with your model run command 'python manage.py makemigrations'
+    After that run command 'python manage.py migrate'
 
 ## Runserver
 
-To runserver run command python manage.py runserver
+To runserver run command 'python manage.py runserver'
