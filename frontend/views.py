@@ -11,7 +11,6 @@ from django.shortcuts import render, redirect
 class IndexView(View):
     template_name = 'frontend/index.html'
     def get(self, request):
-
         return render(request, self.template_name)
 class AdmissionView(View):
     template_name = 'frontend/admission.html'
@@ -43,6 +42,16 @@ class AchivementsView(View):
 
 class AboutView(View):
     template_name = 'frontend/about.html'
+    def get(self, request):
+        return render(request, self.template_name)
+
+class HistoryView(View):
+    template_name = 'frontend/history.html'
+    def get(self, request):
+        return render(request, self.template_name)
+
+class CareerView(View):
+    template_name = 'frontend/career.html'
     def get(self, request):
         return render(request, self.template_name)
 

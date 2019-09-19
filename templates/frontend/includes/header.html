@@ -30,11 +30,11 @@
 								<ul class="location_box">
 									<li>
 										<span><i class="fa fa-envelope"></i> Email</span>
-										<a href="mailto:business@support.com">business@support.com</a>
+										<a href="#">business@support.com</a>
 									</li>
 									<li>
 										<span><i class="fa fa-map-marker"></i> Location</span>
-										<b>123 Main Street, St. NW Ste</b>
+										<b>Jamalpur, Ludhiana</b>
 									</li>
 								</ul>
 							</div>
@@ -46,16 +46,16 @@
 										<span>Connect With Us</span>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fab fa-facebook"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-youtube"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="#"><i class="fab fa-linkedin"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -93,55 +93,26 @@
 										
 									</li>
 									<li>
-										<a href="#!">About us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<a href="{% url 'frontend:about' %}">About us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 										<ul class="sub-nav">
 											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/about.html">About</a>
+												<a href="{% url 'frontend:about' %}">About</a>
 											</li>
 										
 											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/history.html">history</a>
+												<a href="{% url 'frontend:history' %}">history</a>
 											</li>
 											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/career.html">career</a>
-											</li>
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/partnerships.html">partnerships</a>
-											</li>
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/leadership.html">leadership</a>
+												<a href="{% url 'frontend:career' %}">career</a>
 											</li>
 										</ul>
 									</li>
-																		<li>
+									<li>
 										<a href="#!">Event</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
-										<!-- Nav Dropdown -->
-										<ul class="sub-nav">
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/event.html">Event</a>
-											</li>
-
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/event-details.html">Event details</a>
-											</li>
-
-										</ul>
-										<!-- End Nav Dropdown -->
 									</li>
-
 									<li>
 										<a href="javascript:avoid(0);">blog</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
-										<ul class="sub-nav">
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/blog.html">Blog</a>
-											</li>
-											<li>
-												<a href="http://theembazaar.com/demo/goldey/memozin/blog-detail.html">Blog Details</a>
-											</li>
-										</ul>
 									</li>
-
-									
 									<li>
 										<a href="{% url 'frontend:contact' %}">Contact us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 									

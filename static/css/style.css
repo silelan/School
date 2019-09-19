@@ -5588,15 +5588,15 @@ filter: alpha(opacity=0);
 	background: #000;
 }
 .abt-block__img1 {
-	background: url(../images/people.jpg) center 0 no-repeat;
+	background: url("{% static 'images/missionimage.jpg' %}") center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__img2 {
-	background: url(../images/people1.jpg) center 0 no-repeat;
+	background: url("{% static 'images/missionimage.jpg' %}") center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__img3 {
-	background: url(../images/people2.jpg) center 0 no-repeat;
+	background: url("{% static 'images/missionimage.jpg' %}") center 0 no-repeat;
 	background-size: cover;
 }
 .abt-block__left h2 {

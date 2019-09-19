@@ -10,6 +10,8 @@ urlpatterns = [
     path('gallery/',GalleryView.as_view(), name='gallery'),
     path('achivements/',AchivementsView.as_view(), name='achivements'),
     path('about/', AboutView.as_view(), name='about'),
+    path('history/', HistoryView.as_view(), name='history'),
+    path('career/', CareerView.as_view(), name='career'),    
     path('contact/', ContactView.as_view(), name='contact'),
     path('success/', SuccessView.as_view(), name='success'),
     
