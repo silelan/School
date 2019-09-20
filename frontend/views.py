@@ -12,6 +12,7 @@ class IndexView(View):
     template_name = 'frontend/index.html'
     def get(self, request):
         return render(request, self.template_name)
+
 class AdmissionView(View):
     template_name = 'frontend/admission.html'
     def get(self, request):
@@ -22,8 +23,9 @@ class GalleryView(View):
     template_name = 'frontend/gallery.html'
     def get(self, request):
         gallery = GalleryModel.objects.all()
-        page = request.GET.get('page', 1)
         paginator = Paginator(gallery, 6)
+        page = request.GET.get('page', 1)
+        
         try:
             data = paginator.page(page)
         except PageNotAnInteger:
@@ -38,7 +40,16 @@ class AchivementsView(View):
     template_name = 'frontend/achivements.html'
     def get(self, request):
         achievment = AchievmentModel.objects.all()
-        return render(request, self.template_name,{'data':achievment})
+        paginator = Paginator(achievment, 6)
+        page = request.GET.get('page', 1)
+        
+        try:
+            data = paginator.page(page)
+        except PageNotAnInteger:
+            data = paginator.page(1)
+        except EmptyPage:
+            data = paginator.page(paginator.num_pages)
+        return render(request, self.template_name,{'data':data})
 
 class AboutView(View):
     template_name = 'frontend/about.html'
@@ -54,6 +65,19 @@ class CareerView(View):
     template_name = 'frontend/career.html'
     def get(self, request):
         return render(request, self.template_name)
+
+
+class EventView(View):
+    template_name = 'frontend/event.html'
+    def get(self, request):
+        return render(request, self.template_name)
+        
+
+class BlogView(View):
+    template_name = 'frontend/blog.html'
+    def get(self, request):
+        return render(request, self.template_name)
+        
 
 class ContactView(View):
     template_name = 'frontend/contact.html'

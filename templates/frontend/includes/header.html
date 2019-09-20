@@ -108,10 +108,10 @@
 										</ul>
 									</li>
 									<li>
-										<a href="#!">Event</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<a href="{% url 'frontend:event' %}">Event</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 									</li>
 									<li>
-										<a href="javascript:avoid(0);">blog</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
+										<a href="{% url 'frontend:blog' %}">blog</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
 									</li>
 									<li>
 										<a href="{% url 'frontend:contact' %}">Contact us</a><i class="ion-ios-plus-empty d-block d-md-none"></i>
@@ -130,7 +130,7 @@
 										<div class="input-group">
 											<input type="text" class="form-control" placeholder="Search...">
 											<button type="button" class="btn" data-target="#search_form" data-toggle="collapse" aria-label="Close">
-												<i class="ion-android-search"></i>
+												<i class="fa fa-search"></i>
 											</button>
 										</div>
 									</form>
